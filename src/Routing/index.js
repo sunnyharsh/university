@@ -1,8 +1,7 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home, { rootLoader } from "../Pages/Home";
-import About, { aboutLoader } from "../Pages/About";
+import { createBrowserRouter } from "react-router-dom";
+import Home from "../Pages/Home";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
   {

@@ -5,7 +5,6 @@ import {
   MenuItem,
   Snackbar,
   TextField,
-  TextareaAutosize,
   Typography,
 } from "@mui/material";
 import { withStyles } from "@mui/styles";
@@ -87,7 +86,6 @@ const fieldProps = [
   { name: "msg", label: "Message", type: "select" },
 ];
 function UserForm() {
-  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (event) => {
@@ -107,6 +105,7 @@ function UserForm() {
       <Grid item xs={12} sm={12} md={6}>
         <img
           src={applyNow}
+          alt=""
           style={{
             width: "100%",
             height: "100%",
@@ -121,7 +120,6 @@ function UserForm() {
             padding: "20px",
             borderRadius: "0px 10px 10px 0px",
             boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-            borderRadius: "0px 10px 10px 0px",
             height: "100%",
           }}
         >
@@ -139,15 +137,15 @@ function UserForm() {
             </Typography>
           </Grid>
           {fieldProps.map((field, index) => (
-            <Grid key="index" style={{ paddingBottom: "20px" }}>
-              {field.type == "text" ? (
+            <Grid key={index} style={{ paddingBottom: "20px" }}>
+              {field.type === "text" ? (
                 <TextField
                   style={{ width: "100%" }}
                   id="outlined-basic"
                   label={field.label}
                   variant="outlined"
                 />
-              ) : field.type == "select" ? (
+              ) : field.type === "select" ? (
                 <TextField
                   style={{ width: "100%" }}
                   id="outlined-select-currency"

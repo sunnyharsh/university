@@ -42,7 +42,7 @@ const Introduction = () => {
         </Grid>
       </Grid>
       <Grid item xs={10} sm={9} md={6}>
-        <img src={adopen} alt="image not found" width="100%" />
+        <img src={adopen} alt="" width="100%" />
         <Grid style={{ position: "relative" }}>
           <Typography color="primary" className="number">
             XXXXXXXXXXX

@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../assets/images/logi1.png";
 import { Hidden } from "@mui/material";
 const pages = ["Home", "About", "Services", "Contact", "Courses"];
