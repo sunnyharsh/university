@@ -1,0 +1,48 @@
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.appbar{
+        z-index: 100;
+        width: 100%;
+}
+.firstHeading {
+  font-size: 3rem !important;
+  font-weight: 700;
+}
+
+.secondHeading {
+  margin-top: 20px;
+  font-size: 1.2rem !important;
+}
+
+.number {
+  position: absolute;
+  top: -87px;
+  right: -8px;
+  background: #7890a7;
+  color: #fff;
+  font-size: 32px;
+  padding: 9px;
+  border-radius: 12% 0% 0% 12%;
+}
+
+@media (max-width: 898px) {
+  .firstHeading {
+    font-size: 1.5rem !important;
+  }
+
+  .secondHeading {
+    font-size: 1.25 !important;
+  }
+
+  @media (max-width: 500px) {
+    .number {
+      padding: 5px;
+      font-size: 20px;
+      top: -98px;
+    }
+  }
+}
