@@ -6,6 +6,7 @@ import Help from "../Components/Help";
 import UserForm from "../Components/UserForm";
 import WhoWeAre from "../Components/WhoWeAre";
 import CountingCards from "../Components/CountingCards";
+import AdmissionService from "../Components/AdmissionService";
 
 const Home = () => {
   // const alignCenter = { display: "flex", alignItems: "center" };
@@ -25,8 +26,11 @@ const Home = () => {
       <Wrapper isMargin={false}>
         <WhoWeAre />
       </Wrapper>
-      <Wrapper>
+      <Wrapper isMargin={false}>
         <CountingCards />
+      </Wrapper>
+      <Wrapper isMargin={false}>
+        <AdmissionService />
       </Wrapper>
       <Wrapper></Wrapper>
     </div>
